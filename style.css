@@ -17,8 +17,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:25px 60px;
-    background:#0b0b0b;
+    padding:25px 50px;
 }
 
 .logo{
@@ -30,7 +29,7 @@ nav{
 
 nav ul{
     display:flex;
-    gap:30px;
+    gap:25px;
     list-style:none;
 }
 
@@ -38,21 +37,16 @@ nav a{
     color:white;
     text-decoration:none;
     font-size:15px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#d4af37;
 }
 
 
 /* HERO */
 
 .hero{
-    height:85vh;
+    height:80vh;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     text-align:center;
 
     background:
@@ -66,47 +60,30 @@ nav a:hover{
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
-    font-size:80px;
-    letter-spacing:8px;
+    font-size:70px;
+    letter-spacing:6px;
 }
 
 
 .hero p{
     margin:20px 0;
-    font-size:18px;
     color:#ddd;
 }
 
 
 button{
-    padding:14px 35px;
     background:#d4af37;
     color:black;
     border:none;
+    padding:14px 35px;
     cursor:pointer;
-    font-weight:600;
-    transition:.3s;
-}
-
-
-button:hover{
-    transform:scale(1.05);
 }
 
 
 /* COLLECTION */
 
 #collections{
-    display:block !important;
-    visibility:visible !important;
-}
-
-.products{
-    display:flex !important;
-}
-
-#collections{
-    padding:80px 60px;
+    padding:70px 40px;
     text-align:center;
 }
 
@@ -114,7 +91,7 @@ button:hover{
 #collections h2{
     font-family:'Cormorant Garamond',serif;
     font-size:45px;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 
@@ -127,15 +104,9 @@ button:hover{
 
 
 .card{
-    background:#141414;
+    background:#151515;
     width:300px;
     padding:20px;
-    transition:.3s;
-}
-
-
-.card:hover{
-    transform:translateY(-10px);
 }
 
 
@@ -147,89 +118,58 @@ button:hover{
 
 
 .card h3{
-    margin:20px 0 10px;
     font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    margin:20px 0 10px;
+}
 
-/* MOBILE RESPONSIVE */
+
+.price{
+    color:#d4af37;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+
+
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-    nav{
-        padding:20px;
-        flex-direction:column;
-        gap:20px;
-    }
-
-    nav ul{
-        gap:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .logo{
-        font-size:26px;
-    }
-
-
-    .hero{
-        height:70vh;
-        padding:20px;
-    }
-
-    .hero h1{
-        font-size:45px;
-        letter-spacing:4px;
-    }
-
-    .hero p{
-        font-size:15px;
-    }
-
-
-    #collections{
-        padding:50px 20px;
-    }
-
-
-    .products{
-        flex-direction:column;
-        align-items:center;
-    }
-
-
-    .card{
-        width:100%;
-        max-width:350px;
-    }
-
+nav{
+    flex-direction:column;
+    gap:20px;
 }
 
-html, body{
-    width:100%;
-    max-width:100%;
-    overflow-x:hidden;
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
-img{
-    max-width:100%;
-    height:auto;
+.hero h1{
+    font-size:45px;
 }
 
-.old-price{
-    text-decoration:line-through;
-    color:#777;
-    margin-top:10px;
-}
-
-.tag{
-    background:#d4af37;
-    color:black;
-    padding:5px 12px;
-    font-size:12px;
-    position:absolute;
+.products{
+    flex-direction:column;
+    align-items:center;
 }
 
 .card{
-    position:relative;
-    overflow:hidden;
+    width:90%;
+}
+
+html,body{
+    overflow-x:hidden;
+}
+
 }
