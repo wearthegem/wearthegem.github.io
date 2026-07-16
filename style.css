@@ -205,3 +205,22 @@ img{
     max-width:100%;
     height:auto;
 }
+
+.old-price{
+    text-decoration:line-through;
+    color:#777;
+    margin-top:10px;
+}
+
+.tag{
+    background:#d4af37;
+    color:black;
+    padding:5px 12px;
+    font-size:12px;
+    position:absolute;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+}
