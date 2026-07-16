@@ -97,6 +97,15 @@ button:hover{
 /* COLLECTION */
 
 #collections{
+    display:block !important;
+    visibility:visible !important;
+}
+
+.products{
+    display:flex !important;
+}
+
+#collections{
     padding:80px 60px;
     text-align:center;
 }
