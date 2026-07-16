@@ -116,13 +116,13 @@ button{
     object-fit:cover;
 }
 
-
 .card h3{
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
     font-size:28px;
+    letter-spacing:1px;
     margin:20px 0 10px;
 }
-
 
 .price{
     color:#d4af37;
