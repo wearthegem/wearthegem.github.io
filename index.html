@@ -1,110 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Wear The Gem</title>
+<title>WEAR THE GEM</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-<link rel="stylesheet" href="style.css">
-</head>
+body{
+background:#050505;
+color:#fff;
+font-family:'Inter',sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
 
-<body>
+.container{
+text-align:center;
+padding:20px;
+}
 
-<nav class="navbar">
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:65px;
+letter-spacing:12px;
+font-weight:600;
+margin-bottom:20px;
+animation:fade 2s ease;
+}
 
-<div class="logo">
-WEAR THE GEM
-</div>
+.line{
+width:120px;
+height:1px;
+background:#777;
+margin:25px auto;
+}
 
-<ul class="nav-links">
-<li><a href="#shop">SHOP</a></li>
-<li><a href="#about">ABOUT</a></li>
-<li><a href="#contact">CONTACT</a></li>
-</ul>
+.update{
+font-size:13px;
+letter-spacing:8px;
+text-transform:uppercase;
+color:#aaa;
+margin-bottom:20px;
+}
 
-</nav>
+.loader{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:30px;
+}
 
-<section class="hero">
+.loader span{
+width:8px;
+height:8px;
+border-radius:50%;
+background:white;
+animation:bounce 1.2s infinite;
+}
 
-<div class="hero-overlay"></div>
+.loader span:nth-child(2){
+animation-delay:.2s;
+}
 
-<div class="hero-content">
+.loader span:nth-child(3){
+animation-delay:.4s;
+}
 
-<p class="small-text">
-CRAFTED FOR MODERN ESSENTIALS
-</p>
+.text{
+font-size:15px;
+letter-spacing:3px;
+color:#888;
+}
 
-<h1>
-Wear Confidence.<br>
-Wear The Gem.
-</h1>
-
-<a href="#shop" class="shop-btn">
-EXPLORE
-</a>
-
-</div>
-
-</section>
-
-<section id="shop" class="shop">
-
-<h2>Shop</h2>
-
-<div class="shop-grid">
-
-<div class="card">
-<img src="images/jewellery.jpg" alt="Jewellery">
-<h3>Jewellery</h3>
-</div>
-
-<div class="card">
-<img src="images/leather.jpg" alt="Leather">
-<h3>Leather</h3>
-</div>
-
-<div class="card">
-<img src="images/apparel.jpg" alt="Apparel">
-<h3>Apparel</h3>
-</div>
-
-</div>
-
-</section>
-
-<section id="about" class="about">
-
-<h2>About</h2>
-
-<p>
-Wear The Gem is a modern lifestyle brand focused on timeless essentials — from jewellery and leather goods to apparel. Every piece is designed with simplicity, premium quality and everyday confidence in mind.
-</p>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Instagram: @wearthegem</p>
-<p>Email: hello@wearthegem.com</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 WEAR THE GEM. All rights reserved.</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+@keyframes bounce{
+0%,80%,100%{
+transform:
