@@ -135,3 +135,15 @@ section{
 
 .card h3{
     padding:20
+
+.card,
+.about{
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
