@@ -84,3 +84,50 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:0 20
+
+/* SHOP */
+
+.shop-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#fff;
+border:1px solid #ececec;
+border-radius:20px;
+overflow:hidden;
+transition:.35s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.card img{
+height:340px;
+object-fit:cover;
+}
+
+.card h3{
+padding:22px;
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
+font-weight:600;
+}
+
+/* ABOUT */
+
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.about p{
+font-size:17px;
+color:#666
